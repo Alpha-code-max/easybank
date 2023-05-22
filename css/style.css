@@ -20,10 +20,10 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
     font-size: 14px;
-    background-color: white
+    background-color: white;
+    padding: 20px 85px;
 }
 
 nav ul a{
@@ -69,6 +69,7 @@ nav button a{
     padding-left: 200px;
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(180deg, rgb(245, 245, 245), white);
+    padding: 85px;
 }
 
 .maindiv1 div{
@@ -84,17 +85,14 @@ nav button a{
 }
 
 .maindiv1 .div1p{
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     color: hsl(233, 8%, 62%);
     font-weight: 400;
+    font-size: 20px;
 }
 
 .maindiv1 img{
     width: 45%;
-    padding-top: -1000px;
-    margin-left: -2000px;
-    background-image: url(/pictures/bg-intro-desktop.svg);
-    background-repeat: repeat-x;
 }
 
 .maindiv1 button{
@@ -137,7 +135,8 @@ nav button a{
 }
 
 .div2ii{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -154,7 +153,6 @@ nav button a{
 .div2ii p{
     color: hsl(233, 8%, 62%);
     font-weight: 400;
-    width: 70%;  
 }
 
 .div2ii img{
@@ -166,7 +164,7 @@ nav button a{
 /* maindiv3 styling ends */
 
 .maindiv3{
-    background-color: white;
+    background-color:rgb(230, 228, 228);
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     padding: 85px;
@@ -182,7 +180,8 @@ nav button a{
 }
 
 .maindiv3ii{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
@@ -190,12 +189,11 @@ nav button a{
 
 .innerdiv{
     background-color: white;
-    width: 25%;
-    margin: auto;
+    
 }
 
 .innerdiv img{
-    width: 80%;
+    width: 100%;
   
 }
 
@@ -205,6 +203,7 @@ nav button a{
     margin-bottom: 15px;
     color: hsl(233, 24%, 27%);
     width: 80%;
+    padding: 0px 20px;
 }
 
 .maindiv3ii p{
@@ -212,19 +211,21 @@ nav button a{
     font-weight: 400;  
     font-size: 13px;
     width: 80%;
+    padding: 0px 20px 20px;
 }
 
 .maindiv3ii .artists{
     font-size: 10px;
     margin-top: 13px;
     margin-bottom: 8px;
+    padding-bottom: 2px;
 }
 
 footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(180deg, rgb(195, 194, 201), hsl(233, 26%, 24%));
+    background-color:  hsl(233, 26%, 24%);
     padding: 25px 85px;
 }
 
@@ -250,7 +251,7 @@ footer button{
 
 .footer1i{
     margin-bottom: 25px;
-    width: 50%;
+    filter: invert(1);
 }
 
 .footer1ii img{
@@ -268,60 +269,57 @@ footer button{
 
 @media screen and (max-width: 992px) {
 
+    nav{
+        padding: 15px 35px;
+    }
+
     .maindiv1{
-        padding-left: 150px;
-        padding-top: 50px;
+        padding: 50px 35px;
         gap: 10px;
     }
     
 
      .maindiv1 h1{
        font-size:30px;
-       width: 140%;
     }
 
-    /* .div2ii div{
-        width: 150%;
-    }  */
+    .maindiv1 .div1p{
+        font-size:15px;
+     }
+ 
+
+    .maindiv3, .maindiv2{
+        padding: 35px;
+    }
 
     footer button{
         margin-left: 150px;
     }
+
+
     
 }
 
 @media screen and (max-width: 768px) {
 
-    .maindiv1{
-        padding-left: 70px;
-        padding-top: 40px;
-        gap: 20px;
+    .div2ii{
+        grid-template-columns: repeat(2,1fr);
     }
-
     .div2i{
         margin-bottom: 55px;
-        text-align: center;
+        /* text-align: center; */
     }
     
     .div2ii h1{
         font-weight: 400;
         font-size: 20px;
         margin-bottom: 15px;
-    }
-
-    .div2ii p{
-        margin: 10px 65px;
-    }
-    
-
-    
-    .div2ii{
-        flex-direction: column;
-        text-align: center;
-    } 
-    
+    }   
     nav ul a{
         display: none;
+    }
+    .div2i h1{
+        font-size: 30px;
     }
     
     nav button {
@@ -344,23 +342,15 @@ footer button{
     }
     
     .maindiv3ii{
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .maindiv3ii img{
-        width: 200%;
-        margin: 10px -50px;
-    }
-
-    .innerdiv p, .innerdiv h1{
-        width: 200%; 
-        margin: 10px -50px;
+        width: 100%;
     }
 
     .maindiv3i h1{
-        text-align: center;
+        font-size:30px;
     }
 
 }
@@ -373,11 +363,24 @@ footer button{
             font-size: 10px;     
            }
 
-        .maindiv1{
-        padding-left: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        .maindiv1 div{
+        width: 45%;
+        padding: 20px 10px;
         gap: 20px;
+        }
+
+        .div2ii p{
+            font-weight: 400;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .maindiv1 h1{
+            font-size: 20px;
+        }
+
+        .maindiv1 .div1p{
+            font-size: 14px;
         }
 
         footer button{
@@ -393,13 +396,7 @@ footer button{
             margin-bottom: 40px;
         }
 
-        .maindiv3ii img{
-            margin: 10px -100px;
-        }
-    
-        .innerdiv p, .innerdiv h1{
-            margin: 10px -40px;
-        }
+        
 }
 
 @media screen and (max-width: 375px){
@@ -407,55 +404,50 @@ footer button{
     .maindiv1{
         flex-direction: column-reverse;
         text-align: center;
-        margin-top: 10px;
     }
 
-    .maindiv1 img{
-        width:100%;
-        padding-top: -10px;
-        margin-left: -50px;
+    nav{
+        padding: 15px 15px;
+    }
+
+
+    .maindiv2{
+        text-align: center;
     }
 
     .maindiv1 h1{
-        font-size:30px;
-        width: 260%;
-        margin-left: -90px;
+        font-size:25px;
      }
 
-    .maindiv1 .div1p{
-        width: 260%;
-        margin-left: -90px;
-    }
-
-    .maindiv1 button{
-        padding: 8px 10px;  
-        border-radius:40px ;
-        font-size: 10px; 
-        margin-left: -40px;    
-    }
-
-    .div2ii img{
-        width: 60%;
-        margin: 20px;
-    }
-
-    .maindiv3ii img{
-        width: 600%;
-        margin: 10px -100px;
-    }
-
-    .innerdiv p, .innerdiv h1{
-        width: 600%;
-        margin-left :-65px;
+     .div2i h1{
+        font-size: 25px;
+     }
+    
+     .div2ii p{
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 15px;
+    } 
+    
+    .maindiv3ii{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .maindiv3i h1{
-        margin-left :-10px;
+        font-size: 25px;
     }
 
-    .div2ii p, .div2i{
-        margin-left: -80px;
-        width: 250%;
+
+    .maindiv1 div{
+        width: 100%;
+    }
+
+    .div2ii{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        text-align: center;
     }
 
     
