@@ -1,0 +1,462 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 18px;
+    /* margin-left: 85px; */
+}
+
+/* nav styling starts */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 14px;
+    background-color: white
+}
+
+nav ul a{
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style-type: none;
+    color: hsl(233, 8%, 62%);
+    
+}
+
+nav button{
+    all: unset;
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: white;
+    border-radius:30px ;
+    padding: 10px 35px;  
+}
+
+nav button a{
+    color: white;
+    text-decoration: none;
+}
+
+.navigation{
+    display: none;
+}
+
+/* nav styling ends */
+/* maindiv1 styling starts */
+
+.maindiv1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 200px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(180deg, rgb(245, 245, 245), white);
+}
+
+.maindiv1 div{
+    width: 38%;
+    font-size: 14px;
+}
+
+.maindiv1 h1{
+    font-weight: 400;
+    font-size: 58px;
+    margin-bottom: 15px;
+    color: hsl(233, 24%, 27%)
+}
+
+.maindiv1 .div1p{
+    margin-bottom: 15px;
+    color: hsl(233, 8%, 62%);
+    font-weight: 400;
+}
+
+.maindiv1 img{
+    width: 45%;
+    padding-top: -1000px;
+    margin-left: -2000px;
+    background-image: url(/pictures/bg-intro-desktop.svg);
+    background-repeat: repeat-x;
+}
+
+.maindiv1 button{
+    all: unset;
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: white;
+    border-radius:30px ;
+    padding: 10px 35px;  
+}
+
+.maindiv1 button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* maindiv1 styling ends */
+
+/* maindiv2 styling starts */
+.maindiv2{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 85px;
+    background-color:rgb(243, 243, 243);
+}
+
+.div2i{
+    margin-bottom: 55px;
+}
+
+.div2i h1{
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: hsl(233, 24%, 27%);
+}
+
+.div2i p{
+    color: hsl(233, 8%, 62%);
+    font-weight: 400;  
+}
+
+.div2ii{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 45Px;
+}
+
+.div2ii h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: hsl(233, 24%, 27%);
+}
+
+.div2ii p{
+    color: hsl(233, 8%, 62%);
+    font-weight: 400;
+    width: 70%;  
+}
+
+.div2ii img{
+    width: 20%;
+    margin: 20px;
+}
+
+/* maindiv2 styling ends */
+/* maindiv3 styling ends */
+
+.maindiv3{
+    background-color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 85px;
+}
+
+.maindiv3i h1{
+    
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size:40px;
+    margin-bottom: 25px;
+    color: hsl(233, 24%, 27%)
+}
+
+.maindiv3ii{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.innerdiv{
+    background-color: white;
+    width: 25%;
+    margin: auto;
+}
+
+.innerdiv img{
+    width: 80%;
+  
+}
+
+.maindiv3ii h1{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: hsl(233, 24%, 27%);
+    width: 80%;
+}
+
+.maindiv3ii p{
+    color: hsl(233, 8%, 62%);
+    font-weight: 400;  
+    font-size: 13px;
+    width: 80%;
+}
+
+.maindiv3ii .artists{
+    font-size: 10px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, rgb(195, 194, 201), hsl(233, 26%, 24%));
+    padding: 25px 85px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style-type: none;
+    line-height: 1.5rem;
+    font-size: .75rem;
+}
+
+footer button{
+    all: unset;
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: white;
+    border-radius:30px ;
+    margin-left: 550px;
+    padding: 10px 35px;  
+}
+
+.footer1i{
+    margin-bottom: 25px;
+    width: 50%;
+}
+
+.footer1ii img{
+    width: 12%;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.footer1ii a{
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .maindiv1{
+        padding-left: 150px;
+        padding-top: 50px;
+        gap: 10px;
+    }
+    
+
+     .maindiv1 h1{
+       font-size:30px;
+       width: 140%;
+    }
+
+    /* .div2ii div{
+        width: 150%;
+    }  */
+
+    footer button{
+        margin-left: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .maindiv1{
+        padding-left: 70px;
+        padding-top: 40px;
+        gap: 20px;
+    }
+
+    .div2i{
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    
+    .div2ii h1{
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .div2ii p{
+        margin: 10px 65px;
+    }
+    
+
+    
+    .div2ii{
+        flex-direction: column;
+        text-align: center;
+    } 
+    
+    nav ul a{
+        display: none;
+    }
+    
+    nav button {
+        display: none;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    .navigation{
+        display: block;
+    }
+    footer button{
+        margin-left: 50px;
+        padding: 5px 15px;
+    }
+
+    footer{
+        padding: 25px 45px;
+    }
+    
+    .maindiv3ii{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .maindiv3ii img{
+        width: 200%;
+        margin: 10px -50px;
+    }
+
+    .innerdiv p, .innerdiv h1{
+        width: 200%; 
+        margin: 10px -50px;
+    }
+
+    .maindiv3i h1{
+        text-align: center;
+    }
+
+}
+    
+    @media screen and (max-width: 576px) {
+
+        .maindiv1 button{
+            padding: 8px 20px;  
+            border-radius:30px ;
+            font-size: 10px;     
+           }
+
+        .maindiv1{
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 20px;
+        }
+
+        footer button{
+            margin-left: 20px;
+            padding: 8px 20px; 
+            margin-top: 40px;
+        }
+        footer{
+            flex-direction: column;
+        }
+
+        .footer1i, .footer1ii{
+            margin-bottom: 40px;
+        }
+
+        .maindiv3ii img{
+            margin: 10px -100px;
+        }
+    
+        .innerdiv p, .innerdiv h1{
+            margin: 10px -40px;
+        }
+}
+
+@media screen and (max-width: 375px){
+
+    .maindiv1{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .maindiv1 img{
+        width:100%;
+        padding-top: -10px;
+        margin-left: -50px;
+    }
+
+    .maindiv1 h1{
+        font-size:30px;
+        width: 260%;
+        margin-left: -90px;
+     }
+
+    .maindiv1 .div1p{
+        width: 260%;
+        margin-left: -90px;
+    }
+
+    .maindiv1 button{
+        padding: 8px 10px;  
+        border-radius:40px ;
+        font-size: 10px; 
+        margin-left: -40px;    
+    }
+
+    .div2ii img{
+        width: 60%;
+        margin: 20px;
+    }
+
+    .maindiv3ii img{
+        width: 600%;
+        margin: 10px -100px;
+    }
+
+    .innerdiv p, .innerdiv h1{
+        width: 600%;
+        margin-left :-65px;
+    }
+
+    .maindiv3i h1{
+        margin-left :-10px;
+    }
+
+    .div2ii p, .div2i{
+        margin-left: -80px;
+        width: 250%;
+    }
+
+    
+}
